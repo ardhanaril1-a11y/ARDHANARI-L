@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ardhanari L | Resume</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right,#e3f2fd,#ffffff);
+  margin:0;
+}
+.container{
+  max-width:900px;
+  margin:40px auto;
+  background:#fff;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+h1{
+  text-align:center;
+  color:#0d47a1;
+}
+.badge{
+  text-align:center;
+  color:white;
+  background:#1a73e8;
+  padding:6px 12px;
+  border-radius:20px;
+  display:inline-block;
+}
+.section{
+  margin-top:25px;
+  padding:15px;
+  border-radius:8px;
+  transition:0.3s;
+}
+.section:hover{
+  background:#f1f8ff;
+}
+h2{
+  color:#1565c0;
+  border-bottom:2px solid #1565c0;
+}
+.skill{
+  margin-bottom:10px;
+}
+.bar{
+  height:10px;
+  background:#ddd;
+  border-radius:10px;
+}
+.fill{
+  height:10px;
+  background:#1a73e8;
+  border-radius:10px;
+}
+footer{
+  text-align:center;
+  margin-top:30px;
+  color:#555;
+}
+#clock{
+  text-align:center;
+  font-weight:bold;
+  color:#444;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Ardhanari L</h1>
+<p style="text-align:center">
+  <span class="badge">Aspiring Web Developer</span>
+</p>
+
+<p id="clock"></p>
+
+<div class="section">
+<h2>Career Objective</h2>
+<p>
+To build a strong career in software development by continuously improving my
+technical skills and contributing to innovative projects.
+</p>
+</div>
+
+<div class="section">
+<h2>About Me</h2>
+<p>
+I am Ardhanari L, a motivated student interested in web development and programming.
+I enjoy creating clean, responsive websites and learning modern technologies.
+</p>
+</div>
+
+<div class="section">
+<h2>Skills</h2>
+
+<div class="skill">HTML
+  <div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">CSS
+  <div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">Java
+  <div class="bar"><div class="fill" style="width:70%"></div></div>
+</div>
+
+<div class="skill">Python
+  <div class="bar"><div class="fill" style="width:65%"></div></div>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Projects</h2>
+<ul>
+  <li><strong>Resume Website</strong> – Designed and hosted a personal resume using GitHub Pages.</li>
+  <li><strong>Student Record System</strong> – Java-based mini project for managing student data.</li>
+  <li><strong>Simple Calculator</strong> – Java program for arithmetic operations.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Contact</h2>
+<p>Email: yourmail@example.com</p>
+<p>Phone: +91 XXXXXXXXXX</p>
+</div>
+
+<footer>
+© 2025 Ardhanari L | Designed with ❤️
+</footer>
+
+</div>
+
+<script>
+function showTime(){
+  let t=new Date();
+  document.getElementById("clock").innerHTML=
+  "Current Time: "+t.toLocaleTimeString();
+}
+setInterval(showTime,1000);
+showTime();
+</script>
+
+</body>
+</html>
